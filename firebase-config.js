@@ -1,0 +1,1 @@
+export const firebaseConfig={apiKey:"AIzaSyBHp3EUGlUXUyJY6bWBktczS9Whu_ymMjY",authDomain:"lista-n2026.firebaseapp.com",projectId:"lista-n2026",storageBucket:"lista-n2026.firebasestorage.app",messagingSenderId:"871674440644",appId:"1:871674440644:web:0aeaab299a644497b39291"};

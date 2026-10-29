@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lista di Natale di Ambra</title>
+  <link rel="stylesheet" href="natale-finale.css?v=11">
+</head>
+<body><button id="snowToggle" class="snow-toggle" type="button" aria-pressed="false" title="Attiva o disattiva la neve">❄️ Neve: ON</button>
+  <div class="snow snow-a" aria-hidden="true"></div>
+  <div class="snow snow-b" aria-hidden="true"></div>
+  <header><div class="wrap"><span class="badge">🎄 NATALE 2026</span><h1>Lista di Natale di Ambra</h1><p>Idee regalo</p></div></header>
+  <main class="wrap">
+    <section id="choice" class="panel">
+      <h2>Come vuoi entrare?</h2>
+      <div class="choice-buttons"><button id="guest" class="btn red">🎁 Devo fare un regalo</button><button id="owner" class="btn light">✏️ Ho creato la lista</button></div>
+    </section>
+    <section id="login" class="panel hidden">
+      <h2>Accesso proprietario</h2>
+      <input id="email" type="text" placeholder="Nome utente"><input id="password" type="password" placeholder="Password">
+      <div class="dialog-actions"><button class="back btn light">Indietro</button><button id="loginBtn" class="btn red">Entra</button></div><p id="err"></p>
+    </section>
+    <section id="app" class="hidden">
+      <div class="toolbar"><h2 id="mode"></h2><div><button id="add" class="btn red hidden">＋ Aggiungi regalo</button><button id="logout" class="btn light">Esci</button></div></div>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+  <dialog id="edit"><form id="giftForm"><input id="giftId" type="hidden"><h2>Regalo</h2><label>Nome<input id="title" required></label><label>Descrizione<textarea id="description"></textarea></label><label>Prezzo (€)<input id="price" type="number" step="0.01" min="0"></label><label>Link del prodotto<input id="url" type="url" placeholder="https://..."></label><label>Link dell'immagine<input id="image" type="url" placeholder="https://..."></label><div class="dialog-actions"><button type="button" class="btn light" data-close>Annulla</button><button class="btn red">Salva</button></div></form></dialog>
+  <dialog id="reserve"><form id="reserveForm"><input id="reserveId" type="hidden"><h2>Lo prendo io 🎁</h2><p>Puoi lasciare il nome, ma è facoltativo.</p><input id="reservedBy" placeholder="Il tuo nome (facoltativo)"><label class="check"><input id="showName" type="checkbox"> Mostra il mio nome agli altri</label><div class="dialog-actions"><button type="button" class="btn light" data-close>Annulla</button><button class="btn red">Conferma</button></div></form></dialog>
+  <div id="toast"></div><script type="module" src="app-ambra.js?v=11"></script>
+</body></html>
