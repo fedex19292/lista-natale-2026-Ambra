@@ -2,3 +2,5 @@
 .card-link.no-link{color:#8b8176;background:#f4f0e8;border-color:#d9d0c2;box-shadow:none;cursor:not-allowed;opacity:.75}.card-link.no-link:hover{color:#8b8176;background:#f4f0e8;transform:none}
 
 .snow-toggle{position:fixed;z-index:50;top:14px;right:14px;min-height:42px;padding:10px 14px;border:1px solid rgba(255,255,255,.45);border-radius:999px;color:#fff;background:rgba(13,53,43,.84);box-shadow:0 8px 20px rgba(0,0,0,.22);backdrop-filter:blur(8px);font:800 .88rem Arial,sans-serif;cursor:pointer;transition:.18s transform,.18s background}.snow-toggle:hover{transform:translateY(-2px);background:rgba(177,40,53,.92)}body.snow-off .snow{display:none!important}@media(max-width:650px){.snow-toggle{top:9px;right:9px;padding:9px 11px;font-size:.78rem}}
+
+.move-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}.move-actions .btn{width:100%;min-height:42px}.owner-actions{margin-top:0}
